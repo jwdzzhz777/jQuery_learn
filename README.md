@@ -247,7 +247,7 @@ $( "ul li" ).eq( 5 );              // 第六个li元素
 jQuery提供了几个伪选择器，帮助查找表单元素。这些是特别有用的，因为它可能很难根据它们的状态形式在元素之间进行区分，或者使用标准CSS选择键入。
 
 #####:checked
-不要被``:checkbox``迷惑,它适用于复选框(checkboxes)中被选中的元素,同样适用于radio buttons和``<select>``元素(如果只有<select>,用下面的``:selected``).
+不要被``:checkbox``迷惑,它适用于复选框(checkboxes)中被选中的元素,同样适用于radio buttons和``<select>``元素(如果只有``<select>``,用下面的``:selected``).
 ```jq
 $( "form :checked" );
 ```
