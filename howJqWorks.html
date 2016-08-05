@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>test</title>
+	<style>
+		a.test {
+		    font-weight: bold;
+		}	
+	</style>
+</head>
+<body>
+	<a href="http://jquery.com/">http://jquery.com/</a>
+	<script src="jquery.js"></script>
+	<script>
+		window.onload = function() {
+    		alert( "welcome" );
+		};
+		$(document).ready(function(){
+			$('a').click(function(e){
+				alert( "Thanks for visiting!" );
+				event.preventDefault();//阻止默认行为（打开链接）
+				$(this).removeClass( "test" );
+				$(this).hide( "slow" );
+			});
+			$('a').addClass("test");
+		});
+	</script>
+</body>
+</html>
